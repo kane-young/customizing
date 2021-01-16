@@ -120,10 +120,19 @@ class ViewController: UIViewController {
         cnt.font = UIFont.boldSystemFont(ofSize: 10)
         cnt.textColor = UIColor(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0)
         cnt.textAlignment = .center
+        cnt.text = "12"
         
         cnt.layer.cornerRadius = 3
         cnt.layer.borderWidth = 2
         cnt.layer.borderColor = UIColor(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0).cgColor
+        rv.addSubview(cnt)
         
+        let more = UIButton(type: .system)
+        more.frame = CGRect(x: 50, y: 10, width: 16, height: 16)
+        more.setImage(UIImage(named: "more"), for: .normal)
+        
+        rv.addSubview(more)
     }
+    
+    
 }
