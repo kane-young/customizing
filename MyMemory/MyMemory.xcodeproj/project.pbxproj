@@ -19,6 +19,7 @@
 		C305D32925A8A35C0003B93E /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C305D32825A8A35C0003B93E /* MemoListVC.swift */; };
 		C305D32C25A8A3910003B93E /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C305D32B25A8A3910003B93E /* MemoData.swift */; };
 		C305D33025AB16F20003B93E /* rose.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C305D32F25AB16F20003B93E /* rose.jpeg */; };
+		C3D23F2225B66DDC00593191 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D23F2125B66DDC00593191 /* CSLogButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C305D32825A8A35C0003B93E /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		C305D32B25A8A3910003B93E /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 		C305D32F25AB16F20003B93E /* rose.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rose.jpeg; sourceTree = "<group>"; };
+		C3D23F2125B66DDC00593191 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				C305D31E25A8A2850003B93E /* MemoFormVC.swift */,
 				C305D32125A8A2A70003B93E /* MemoCell.swift */,
 				C305D30D25A813650003B93E /* Assets.xcassets */,
+				C3D23F2125B66DDC00593191 /* CSLogButton.swift */,
 				C305D30F25A813650003B93E /* LaunchScreen.storyboard */,
 				C305D31225A813650003B93E /* Info.plist */,
 				C305D30A25A813640003B93E /* MyMemory.xcdatamodeld */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D23F2225B66DDC00593191 /* CSLogButton.swift in Sources */,
 				C305D30C25A813640003B93E /* MyMemory.xcdatamodeld in Sources */,
 				C305D32C25A8A3910003B93E /* MemoData.swift in Sources */,
 				C305D31F25A8A2850003B93E /* MemoFormVC.swift in Sources */,
