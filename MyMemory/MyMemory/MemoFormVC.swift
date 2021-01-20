@@ -29,6 +29,8 @@ class MemoFormVC: UIViewController, UITextViewDelegate {
         self.contents.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.
         
+        
+        //줄간격
         let style = NSMutableParagraphStyle()
         style.lineSpacing = 9
         self.contents.attributedText = NSAttributedString(string: " ", attributes: [NSAttributedString.Key.paragraphStyle: style])
