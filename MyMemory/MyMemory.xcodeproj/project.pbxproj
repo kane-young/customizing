@@ -19,6 +19,7 @@
 		C305D32925A8A35C0003B93E /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C305D32825A8A35C0003B93E /* MemoListVC.swift */; };
 		C305D32C25A8A3910003B93E /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C305D32B25A8A3910003B93E /* MemoData.swift */; };
 		C305D33025AB16F20003B93E /* rose.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C305D32F25AB16F20003B93E /* rose.jpeg */; };
+		C32203EE25C3A9490071133E /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32203ED25C3A9490071133E /* UserInfoManager.swift */; };
 		C34D6BC725B8757E006E70BB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34D6BC625B8757E006E70BB /* SWRevealViewController.m */; };
 		C34D6BD525B875DD006E70BB /* icon06.png in Resources */ = {isa = PBXBuildFile; fileRef = C34D6BC925B875DD006E70BB /* icon06.png */; };
 		C34D6BD625B875DD006E70BB /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34D6BCA25B875DD006E70BB /* warning-icon-60@2x.png */; };
@@ -52,6 +53,7 @@
 		C305D32825A8A35C0003B93E /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		C305D32B25A8A3910003B93E /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 		C305D32F25AB16F20003B93E /* rose.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rose.jpeg; sourceTree = "<group>"; };
+		C32203ED25C3A9490071133E /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		C34D6BC425B8757D006E70BB /* MyMemory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyMemory-Bridging-Header.h"; sourceTree = "<group>"; };
 		C34D6BC525B8757D006E70BB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		C34D6BC625B8757E006E70BB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				C305D32125A8A2A70003B93E /* MemoCell.swift */,
 				C305D30D25A813650003B93E /* Assets.xcassets */,
 				C3D23F2125B66DDC00593191 /* CSLogButton.swift */,
+				C32203ED25C3A9490071133E /* UserInfoManager.swift */,
 				C305D30F25A813650003B93E /* LaunchScreen.storyboard */,
 				C305D31225A813650003B93E /* Info.plist */,
 				C305D30A25A813640003B93E /* MyMemory.xcdatamodeld */,
@@ -240,6 +243,7 @@
 				C305D30425A813640003B93E /* SceneDelegate.swift in Sources */,
 				C34D6BC725B8757E006E70BB /* SWRevealViewController.m in Sources */,
 				C305D32225A8A2A70003B93E /* MemoCell.swift in Sources */,
+				C32203EE25C3A9490071133E /* UserInfoManager.swift in Sources */,
 				C305D32525A8A2C30003B93E /* MemoReadVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
