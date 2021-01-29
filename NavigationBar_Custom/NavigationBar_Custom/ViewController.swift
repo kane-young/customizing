@@ -62,6 +62,7 @@ class ViewController: UIViewController {
         
         let color = UIColor(red: 0.02, green: 0.22, blue: 0.49, alpha: 1.0)
         self.navigationController?.navigationBar.barTintColor = color
+        self.navigationItem.titleView = containerView
     }
     
     func initTitleImage(){
