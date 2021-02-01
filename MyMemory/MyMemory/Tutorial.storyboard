@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tutorial MasterVC-->
         <scene sceneID="X5K-wH-EEj">
             <objects>
-                <viewController id="Bq1-cZ-hco" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MasterVC" id="Bq1-cZ-hco" customClass="TutorialMasterVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2IV-W7-lre">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +23,9 @@
                                     <constraint firstAttribute="height" constant="30" id="cEo-WY-AQp"/>
                                 </constraints>
                                 <state key="normal" title="시작하기"/>
+                                <connections>
+                                    <action selector="close:" destination="Bq1-cZ-hco" eventType="touchUpInside" id="wF5-Ao-y3e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2fA-XL-oBt"/>
@@ -37,27 +40,42 @@
             </objects>
             <point key="canvasLocation" x="-145" y="23"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial ContentsVC-->
         <scene sceneID="HcR-Ja-V4v">
             <objects>
-                <viewController id="ZLu-yr-ggu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContentsVC" id="ZLu-yr-ggu" customClass="TutorialContentsVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hT3-l4-DCO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EGp-ze-Zdc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EGp-ze-Zdc" userLabel="배경 이미지">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaJ-Vj-Ukt" userLabel="제목 레이블">
+                                <rect key="frame" x="165.5" y="30" width="44.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xUR-eC-umH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F6F-gM-5Zq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="F6F-gM-5Zq" firstAttribute="bottom" secondItem="EGp-ze-Zdc" secondAttribute="bottom" id="RyN-kb-6OC"/>
-                            <constraint firstItem="F6F-gM-5Zq" firstAttribute="trailing" secondItem="EGp-ze-Zdc" secondAttribute="trailing" id="pFz-rm-TC3"/>
+                            <constraint firstItem="EGp-ze-Zdc" firstAttribute="bottom" secondItem="hT3-l4-DCO" secondAttribute="bottom" id="RyN-kb-6OC"/>
+                            <constraint firstItem="OaJ-Vj-Ukt" firstAttribute="top" secondItem="F6F-gM-5Zq" secondAttribute="top" constant="30" id="TTk-Vm-ZPG"/>
+                            <constraint firstItem="OaJ-Vj-Ukt" firstAttribute="centerX" secondItem="hT3-l4-DCO" secondAttribute="centerX" id="p0Z-7v-kTl"/>
+                            <constraint firstItem="EGp-ze-Zdc" firstAttribute="trailing" secondItem="F6F-gM-5Zq" secondAttribute="trailing" id="pFz-rm-TC3"/>
                             <constraint firstItem="EGp-ze-Zdc" firstAttribute="leading" secondItem="F6F-gM-5Zq" secondAttribute="leading" id="vD9-NW-J3p"/>
                             <constraint firstItem="EGp-ze-Zdc" firstAttribute="top" secondItem="F6F-gM-5Zq" secondAttribute="top" id="zjl-Se-D4q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="EGp-ze-Zdc" id="B4c-Lq-K3K"/>
+                        <outlet property="titleLabel" destination="OaJ-Vj-Ukt" id="9XX-J1-700"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6d-PW-wvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +162,7 @@
         <!--Page View Controller-->
         <scene sceneID="IZb-JW-DoE">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="cOS-DM-9h4" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="cOS-DM-9h4" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CI-Z8-lN3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="23"/>

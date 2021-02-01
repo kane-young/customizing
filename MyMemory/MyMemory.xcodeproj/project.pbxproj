@@ -35,6 +35,9 @@
 		C34D6BDF25B875DD006E70BB /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = C34D6BD325B875DD006E70BB /* icon02.png */; };
 		C34D6BE025B875DD006E70BB /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C34D6BD425B875DD006E70BB /* sidemenu.png */; };
 		C34D6BE325B87A45006E70BB /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34D6BE225B87A45006E70BB /* SideBarVC.swift */; };
+		C364690325C6CB8D00E05A32 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364690225C6CB8D00E05A32 /* Utils.swift */; };
+		C364691325C6CFB700E05A32 /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364691225C6CFB700E05A32 /* TutorialContentsVC.swift */; };
+		C364691A25C6F58F00E05A32 /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364691925C6F58F00E05A32 /* TutorialMasterVC.swift */; };
 		C3BB363225B9325400F7A69B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB363125B9325400F7A69B /* ProfileVC.swift */; };
 		C3D23F2225B66DDC00593191 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D23F2125B66DDC00593191 /* CSLogButton.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,9 @@
 		C34D6BD325B875DD006E70BB /* icon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon02.png; path = "../../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon02.png"; sourceTree = "<group>"; };
 		C34D6BD425B875DD006E70BB /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidemenu.png; path = "../../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/sidemenu.png"; sourceTree = "<group>"; };
 		C34D6BE225B87A45006E70BB /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		C364690225C6CB8D00E05A32 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C364691225C6CFB700E05A32 /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
+		C364691925C6F58F00E05A32 /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 		C3BB363125B9325400F7A69B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C3D23F2125B66DDC00593191 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +113,7 @@
 		C305D30025A813640003B93E /* MyMemory */ = {
 			isa = PBXGroup;
 			children = (
+				C364691025C6CF9B00E05A32 /* Tutorial */,
 				C305D30125A813640003B93E /* AppDelegate.swift */,
 				C305D30325A813640003B93E /* SceneDelegate.swift */,
 				C305D30725A813640003B93E /* Main.storyboard */,
@@ -121,6 +128,7 @@
 				C305D32125A8A2A70003B93E /* MemoCell.swift */,
 				C305D30D25A813650003B93E /* Assets.xcassets */,
 				C32203F025C472720071133E /* Tutorial.storyboard */,
+				C364690225C6CB8D00E05A32 /* Utils.swift */,
 				C3D23F2125B66DDC00593191 /* CSLogButton.swift */,
 				C32203ED25C3A9490071133E /* UserInfoManager.swift */,
 				C305D30F25A813650003B93E /* LaunchScreen.storyboard */,
@@ -149,6 +157,15 @@
 				C34D6BCA25B875DD006E70BB /* warning-icon-60@2x.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C364691025C6CF9B00E05A32 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				C364691225C6CFB700E05A32 /* TutorialContentsVC.swift */,
+				C364691925C6F58F00E05A32 /* TutorialMasterVC.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,15 +256,18 @@
 				C3BB363225B9325400F7A69B /* ProfileVC.swift in Sources */,
 				C3D23F2225B66DDC00593191 /* CSLogButton.swift in Sources */,
 				C34D6BE325B87A45006E70BB /* SideBarVC.swift in Sources */,
+				C364690325C6CB8D00E05A32 /* Utils.swift in Sources */,
 				C305D30C25A813640003B93E /* MyMemory.xcdatamodeld in Sources */,
 				C305D32C25A8A3910003B93E /* MemoData.swift in Sources */,
 				C305D31F25A8A2850003B93E /* MemoFormVC.swift in Sources */,
 				C305D32925A8A35C0003B93E /* MemoListVC.swift in Sources */,
 				C305D30225A813640003B93E /* AppDelegate.swift in Sources */,
 				C305D30425A813640003B93E /* SceneDelegate.swift in Sources */,
+				C364691A25C6F58F00E05A32 /* TutorialMasterVC.swift in Sources */,
 				C34D6BC725B8757E006E70BB /* SWRevealViewController.m in Sources */,
 				C305D32225A8A2A70003B93E /* MemoCell.swift in Sources */,
 				C32203EE25C3A9490071133E /* UserInfoManager.swift in Sources */,
+				C364691325C6CFB700E05A32 /* TutorialContentsVC.swift in Sources */,
 				C305D32525A8A2C30003B93E /* MemoReadVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

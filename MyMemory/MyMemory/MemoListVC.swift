@@ -35,6 +35,14 @@ class MemoListVC: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        let ud = UserDefaults.standard
+        
+        if ud.bool(forKey: UserInfoKey.tutorial) == false{
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: false, completion: nil)
+            return
+        }
         self.tableView.reloadData()
     }//화면이 나타날 때마다 호출되는 메소드
     
