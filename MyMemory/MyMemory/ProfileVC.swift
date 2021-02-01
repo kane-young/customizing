@@ -59,6 +59,8 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         let tap = UITapGestureRecognizer(target: self, action: #selector(profile(_:)))
         self.profileImage.addGestureRecognizer(tap)
         self.profileImage.isUserInteractionEnabled = true
+        
+        self.drawBtn()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -155,7 +157,7 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         v.frame.size.width = self.view.frame.width
         v.frame.size.height = 40
         v.frame.origin.x = 0
-        v.frame.origin.y = self.view.frame.origin.y + self.tv.frame.height
+        v.frame.origin.y = self.tv.frame.origin.y + self.tv.frame.height
         v.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
         
         self.view.addSubview(v)

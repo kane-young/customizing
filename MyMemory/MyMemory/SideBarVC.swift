@@ -67,7 +67,7 @@ class SideBarVC: UITableViewController{
         
         cell.textLabel?.text = self.titles[indexPath.row]
         cell.imageView?.image = self.icons[indexPath.row]
-        
+        cell.tag = indexPath.row
         cell.textLabel?.font = UIFont.systemFont(ofSize: 14)
         return cell
     }
@@ -77,14 +77,17 @@ class SideBarVC: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0{
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        if cell?.tag == 0{
             //선택된 행이 새글 작성 메뉴일 때
             let uv = self.storyboard?.instantiateViewController(withIdentifier: "MemoForm")
             let target = self.revealViewController()?.frontViewController as! UINavigationController
             
             target.pushViewController(uv!, animated: true)
             self.revealViewController()?.revealToggle(self)
-        } else if indexPath.row == 5{
+            
+        } else if cell?.tag == 5{
             let uv = self.storyboard!.instantiateViewController(withIdentifier: "_Profile")
             uv.modalPresentationStyle = .fullScreen
             self.present(uv, animated: true, completion: {
